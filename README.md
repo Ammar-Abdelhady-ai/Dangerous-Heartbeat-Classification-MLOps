@@ -92,7 +92,6 @@ Access the API through the Kubernetes service endpoint. You can find the endpoin
     ```bash
     kubectl get services
     ```
-
 ## Kubernetes Details
 
 ### Service
