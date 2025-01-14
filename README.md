@@ -89,9 +89,8 @@ Access the API documentation at `http://localhost:8000/docs` after running the D
 
 Access the API through the Kubernetes service endpoint. You can find the endpoint by running:
 
-    ```bash
     kubectl get services
-    ```
+    
 ## Kubernetes Details
 
 ### Service
