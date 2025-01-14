@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: dangerous-heartbeat
+  name: dangerous-heartbeat
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: dangerous-heartbeat
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1       
+  template:
+    metadata:
+      labels:
+        app: dangerous-heartbeat
+    spec:
+      containers:
+      - image: ammarabdelhady8132/dangerous-heartbeat:v1
+        name: dangerous-heartbeat
+        resources: {}
