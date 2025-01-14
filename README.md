@@ -74,7 +74,7 @@ This project provides a deployment pipeline for a machine learning model that cl
 1. **Start the FastAPI server:**
 
     ```bash
-    uvicorn app.main:app --reload
+    uvicorn myapi:app --reload
     ```
 
 2. **Access the API documentation:**
