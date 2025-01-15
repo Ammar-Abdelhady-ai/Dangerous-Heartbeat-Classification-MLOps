@@ -31,3 +31,7 @@ jobs:
 
       - name: Log out from Docker Hub
         run: docker logout
+
+      - name: Run Docker container
+        run: |
+          docker run -d -p 8000:8000 ${{ secrets.DOCKER_USERNAME }}/dangerous-heartbeat:latest
